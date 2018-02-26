@@ -49,12 +49,12 @@ struct complex_t
         return result;
     };
     
-    std::istream & read( std::istream & stream)
+    istream & read(istream & stream)
     {
         char op;
         return stream >> op >> real >> op >> imag >> op;
     };
-    std::ostream & write( std::ostream & stream )
+    ostream & write(ostream & stream )
     {
         return stream << "(" << real << "," << imag << ")";
     };
